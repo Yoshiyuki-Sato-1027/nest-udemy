@@ -5,7 +5,7 @@ import { ItemsService } from './items/items.service';
 
 @Module({
   imports: [ItemsModule],
-  controllers: [ItemsController],
-  providers: [ItemsService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
