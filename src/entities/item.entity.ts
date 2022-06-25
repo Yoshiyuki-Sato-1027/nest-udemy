@@ -5,14 +5,22 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export class Item {
   @PrimaryGeneratedColumn('uuid')
   id: string;
+
   @Column()
   name: string;
+
   @Column()
   price: number;
+
   @Column()
   description: string;
+
   @Column()
   status: ItemStatus;
+
   @Column()
   createdAt: string;
+
+  @Column()
+  updatedAt: string;
 }
