@@ -5,6 +5,9 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { CredentialsDto } from './dto/credentials.dto';
 import { UserRepository } from './use.repository';
 import * as bcrypt from 'bcrypt';
+
+// @Injectable 注入可能なオブジェクトであることを示しており
+// service メインロジックを書くところ
 @Injectable()
 export class AuthService {
   constructor(
